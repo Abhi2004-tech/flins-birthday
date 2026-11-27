@@ -1,0 +1,127 @@
+body{
+
+    background: #a2d2ff;
+    color: #ffffff;
+    font-family: 'Happy Monkey', cursive;
+    text-align: center;
+    
+}
+
+h1, h2, h3, h4, p{
+    text-shadow: 0px 0px 1px black;
+}
+
+#bday-age{
+    background-color: #EFB0C9;
+    padding: 6px 15px;
+    border-radius: 8px;
+    margin-bottom: 11px;
+}
+
+
+#bday-date{
+    margin-top: 0px;
+    background-color: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+#flins{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px solid #EFB0C9;
+    object-fit: cover;
+    object-position: 72% 22%;
+    image-rendering: auto;
+    transform: translateZ(0);
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift-img {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.gift-cover{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-size: cover;
+
+    transition: transform 0.3s ease, opacity 1.5s ease;
+}
+
+.gift-img:hover .gift-cover {
+    transform: scale(1.05);
+}
+
+/* Slow fade-out when clicked */
+.gift-img.open .gift-cover {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gift-section{
+    margin-top: 50px
+}
+.gift-title{
+    margin-bottom: 10px;
+}
+
+.gift-hint{
+    margin-top: 0px;
+}
+
+#gift-1{
+    /* Image revealed AFTER clicking */
+    background-image: url("miko.jpg");
+}
+
+#gift-1 .gift-cover{
+    background-image: url("zongli.webp");
+}
+
+#gift-2{
+
+    background-image: url("image 1.gif");
+}
+
+#gift-2 .gift-cover{
+    background-image: url("neuvillette.webp");
+}
+
+#flins-ani{
+    background-image: url("animation flins birthday.gif");
+}
+
+#flins-ani .gift-cover{
+    
+    background-image: url("flinsh.webp");
+}
+
+#flin{
+    width: 500px;
+    height: 700px;
+}
+
+#flins-ani{
+    width: 500px;
+    height: 700px;
+}
+
